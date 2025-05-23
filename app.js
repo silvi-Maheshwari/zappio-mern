@@ -4,6 +4,9 @@ const otpRoutes = require('./routes/otpRoutes');
 const rideRoutes = require('./routes/rideRoutes');
 
 dotenv.config();
+require('dotenv').config(); // sabse upar likhein
+
+console.log('Loaded key path:', process.env.GOOGLE_APPLICATION_CREDENTIALS); 
 const app = express();
 app.use(express.json());
 
